@@ -19,7 +19,7 @@ export const create = async(req, res) => {
     }
 }
 
-export const getBooks = async(req, res) => {
+/* export const getBooks = async(req, res) => {
     try {
         const books = await Book.find();
         if(books.length > 0){
@@ -30,7 +30,7 @@ export const getBooks = async(req, res) => {
     } catch (error) {
         res.status(500).json({"error" : `Internal server error ${error}`});
     }
-}
+} */
 
 export const getAvailableBooks = async(req, res) => {
     try {
